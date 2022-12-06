@@ -55,7 +55,10 @@ class PostsController < ApplicationController
 
   # POST users/1/posts/1/star
   # PENDING CONTROLLER ACTION
-
+def star
+  #update the stars of the post by 1
+  #save
+  #redirect somewhere
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
