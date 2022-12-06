@@ -9,8 +9,8 @@ RSpec.describe Post, type: :model do
     post = Post.new(image_url: nil, user_id: @user.id)
     
     #this post does not have an image_url, do we expect it to be valid?
-    skip("Unit Test: you need to implement this as HW")
-  end
+expect(post).not_to be_valid
+   end
 
   it "requires a valid image_url to be valid" do
     post = Post.new(image_url: "http://www.google.com", user_id: @user.id)
